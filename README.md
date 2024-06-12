@@ -1,4 +1,4 @@
-# Databricks Data Pipeline
+# Sales Data Pipeline
 
 ## Table of Contents
 - [Introduction](#introduction)
