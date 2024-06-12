@@ -88,4 +88,78 @@ Report Snippet:
 
 
 
-**5. Top Customers:** This report gives information of top five customers. 
+**5. Monthly Quarterly Yearly Sales:** This report gives total sales for every month, quarter and year.
+Script:- *aiqu_assignment/aggregation/5.monthly_quarterly_yearly_sales*
+
+Monthly Sales:
+Data Snippet:-
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/f0a222bf-6ecb-4209-98fa-14d80e4e0b41)
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/30b7e13e-4ed3-4636-8402-b36cdbe54f95)
+
+Quarterly Sales:
+Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/bb3adbe7-e485-4899-97dd-fdce04fdc269)
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/703b37a3-3e35-4374-b9b5-4c149765ef02)
+
+Yearly Sales:
+Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/65002536-df10-45a8-9cf3-d83152ab407a)
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/dff96f23-e04c-43a8-bd7b-edfe0b2d2141)
+
+
+**6. Weather Analysis:** There are two reports in this script. First report gives total sales amount for every weather condition. Second report shows the product which had maximum revenue in each city.
+
+Script:*aiqu_assignment/aggregation/6.weather_analysis*
+
+Data Snippet:
+
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/64fe9ac6-71e4-487a-a0e4-c6fa3f63bcf4)
+
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/6f9f710a-9b84-4fd7-970f-f97aea4af2c2)
+
+
+Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/0a03c856-a12d-4c93-892a-ac7d87a22aff)
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/8b460e57-0bf4-4603-96fd-2d9ac08de0ad)
+
+**7. Other Analysis:** This script has reports of Average Order Value, Sales Volume Distribution and total revenue generated for each city.
+
+Script:
+
+Average Order Value Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/ea28358a-365d-46f9-9e71-55823aa4785b)
+
+Sales Volume Distribution Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/b7f36fd1-bc3f-4d74-aa30-186a256125c8)
+
+
+Total Revenue Per City Data Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/80777e0d-eaf9-4c5f-bc9d-509cdb08e834)
+
+
+Report Snippet:
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/fb0cbecb-3796-4c71-bf00-f3c6cc001bba)
