@@ -6,9 +6,78 @@
 - [Setup Instructions](#setup-instructions)
 - [Usage Instructions](#usage-instructions)
 - [Data Pipeline Description](#data-pipeline-description)
-- [Aggregations and Data Manipulations](#aggregations-and-data-manipulations)
 - [Dependencies](#dependencies)
-- [Visualizations](#visualizations)
+
+## Introduction
+This project provides a Dockerized data pipeline that runs Databricks notebooks to perform various data processing tasks. The pipeline fetches user and sales data, integrates weather information, and performs several data aggregations and transformations.
+
+## Components
+1. **Dockerfile**: Defines the Docker image for the pipeline.
+2. **requirements.txt**: Lists the required Python packages.
+3. **main.py**: Entry point script to run the Databricks notebooks with exception handling.
+
+## Setup Instructions
+1. **Install Docker**: Ensure Docker is installed on your machine. You can download and install Docker from [here](https://www.docker.com/products/docker-desktop).
+
+2. **Project Directory Structure**:
+   Create a project directory with the following structure:
+   /project
+  |-- Dockerfile
+  |-- requirements.txt
+  |-- main.py
+
+3. **Dockerfile**:
+Create a `Dockerfile` in the project directory:
+
+**Use an official Python runtime as a parent image**
+
+FROM python:3.9-slim
+
+**Set the working directory in the container**
+
+WORKDIR /app
+
+**Copy the current directory contents into the container at /app**
+
+COPY . /app
+
+**Install any needed packages specified in requirements.txt**
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+**Install Databricks CLI**
+
+RUN pip install databricks-cli
+
+**Set environment variables for Databricks CLI**
+
+ENV DATABRICKS_HOST='https://adb-3822198821958806.6.azuredatabricks.net'
+
+ENV DATABRICKS_TOKEN='dapi096a2c47e70f466a59f98fd00e7a6436-3'
+
+**Run main.py when the container launches**
+
+CMD ["python3", "main.py"]
+
+ **requirements.txt**:
+ 
+Create a *'requirements.txt'* file in the project directory:
+
+requests
+
+pandas
+
+pyspark
+
+## Usage Instructions
+**1. Build the Docker Image:**
+
+docker build -t my-databricks-app .
+
+**2. Run the Docker Container:**
+
+docker run -p 4000:80 my-databricks-app
+
 
 ## Data Pipeline Description
 The data pipeline consists of the following components:
@@ -163,3 +232,11 @@ Total Revenue Per City Data Snippet:
 Report Snippet:
 
 ![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/fb0cbecb-3796-4c71-bf00-f3c6cc001bba)
+
+
+## Dependencies
+- Python 3.9
+- requests
+- pandas
+- pyspark
+- Databricks CLI
