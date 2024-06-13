@@ -6,6 +6,7 @@
 - [Setup Instructions](#setup-instructions)
 - [Usage Instructions](#usage-instructions)
 - [Data Pipeline Description](#data-pipeline-description)
+- [Orchestration](#orchestration)
 - [Dependencies](#dependencies)
 
 ## Introduction
@@ -232,6 +233,16 @@ Total Revenue Per City Data Snippet:
 Report Snippet:
 
 ![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/fb0cbecb-3796-4c71-bf00-f3c6cc001bba)
+
+## Orchestration
+All the pipelines will be triggered from one script i.e. main_script.py. It can be scheduled on the basis of the below mentioned points.
+
+Script:**aiqu_assignment/main_script.py**
+
+-frequency of source data refresh.
+
+-frequency of data retreival by business.
+
 
 
 ## Dependencies
