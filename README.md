@@ -7,6 +7,7 @@
 - [Usage Instructions](#usage-instructions)
 - [Data Pipeline Description](#data-pipeline-description)
 - [Orchestration](#orchestration)
+- [Table Details](#table-details)
 - [Dependencies](#dependencies)
 
 ## Introduction
@@ -243,7 +244,38 @@ Script:**aiqu_assignment/main_script.py**
 
 -frequency of data retreival by business.
 
+## Table Details
+A database has been created for all these tables.
 
+**Database Name** : sales_analytics
+
+**Table Names** : sales, user, user_sales, user_sales_weather, total_sales
+
+**Schema of Sales Table**: It has sales data. It has all the fields from csv file.
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/9a27d1d0-e3ba-4d97-bebb-b9de3d414d25)
+
+
+**Schema of User Table**: It has user data. It has all the fields read from API.
+
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/2dddc5c0-baf5-4af2-8c93-4743b55b8d5d)
+
+
+**Schema of user_sales Table**:This table has been created by joining sales and user tables. Only relevant fields has been brought to this table as per the reporting requirements. It can be updated further as per the need.
+
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/03de8e18-b5ee-4218-84f2-23859c39b302)
+
+
+**Schema of user_sales_weather Table**: This table has been created by fetching data from Open Weather Map API. It has weather data, temperature information in addition to user and sales information.
+
+
+![image](https://github.com/prerna-xeb/prerna_project/assets/171050743/4e122898-4e40-4c4b-b887-ee4d4fcb987b)
+
+
+
+**Note**:- Only the relevant fields have been updated and modified. The fields which are not required has not been modified to avoid unnecessary computations.
 
 ## Dependencies
 - Python 3.9
