@@ -71,6 +71,8 @@ pandas
 
 pyspark
 
+**Note**: If the above steps won't work, then one can set up a Databricks workspace in any of the cloud and use it for running all these scripts. I have developed all these scripts on Databricks using Azure Cloud.
+
 ## Usage Instructions
 **1. Build the Docker Image:**
 
